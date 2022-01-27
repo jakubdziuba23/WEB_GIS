@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB GIS</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.21/esri/themes/light/main.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.arcgis.com/4.21/"></script>
+</head>
+<body>
+    <div id="naglowek"><h1>Miejsca  pobytów  Adama  Mickiewicza</h1></div>
+    <br>
+    <div id="tlo"><img src="tlo.png" alt="tlo1" height="100%" width="100%"></div>
+    <ul>
+        <li><button id="nowogrodek" title="Nowogródek"><img src="nowogrodek.png" alt="nowogrodek1" height="100px" width="100px"/></button></li>
+        <li><button id="wilno" title="Wilno"><img src="wilno.png" alt="wilno1" height="100px" width="100px"/></button></li>
+        <li><button id="kowno" title="Kowno"><img src="kowno.png" alt="kowno1" height="100px" width="100px"/></button></li>
+        <li><button id="petersburg" title="Petersburg"><img src="petersburg.png" alt="petersburg1" height="100px" width="100px"/></button></li>
+        <li><button id="odessa" title="Odessa"><img src="odessa.png" alt="odessa1" height="100px" width="100px"/></button></li>
+        <li><button id="moskwa" title="Moskwa"><img src="moskwa.png" alt="moskwa1" height="100px" width="100px"/></button></li>
+        <li><button id="symferopol" title="Symferopol"><img src="symferopol.png" alt="symferopol1" height="100px" width="100px"/></button></li>
+        <li><button id="drezno" title="Drezno"><img src="drezno.png" alt="drezno1" height="100px" width="100px"/></button></li>
+        <li><button id="paryz" title="Paryż"><img src="paryz.png" alt="paryz1" height="100px" width="100px"/></button></li>
+        <li><button id="stambul" title="Stambuł"><img src="stambul.png" alt="stambul1" height="100px" width="100px"/></a></li>
+    </ul>
+    <div id="viewDiv"></div>
+    <div id="basemapGalleryDiv"></div>
+    <div id="mapDiv"></div>
+    <button id="pomiar">Zmierz odległość</button>
+    <div id="tekst">
+        <p>
+            Adam Bernard Mickiewicz ur. 24 grudnia 1798 w Nowogródku, zm. 26 listopada 1855 w Stambule – polski poeta, 
+            działacz polityczny, publicysta, tłumacz, filozof, działacz religijny, mistyk, organizator i dowódca wojskowy, 
+            nauczyciel akademicki. Obok Juliusza Słowackiego i Zygmunta Krasińskiego uważany za największego poetę polskiego romantyzmu 
+            oraz literatury polskiej, a nawet za jednego z największych na skalę europejską. 
+            Określany też przez innych, jako poeta przeobrażeń oraz bard słowiański. Członek i założyciel Towarzystwa Filomatycznego, 
+            mesjanista związany z Kołem Sprawy Bożej Andrzeja Towiańskiego. 
+            Jeden z najwybitniejszych twórców dramatu romantycznego w Polsce, 
+            zarówno w ojczyźnie, jak i w zachodniej Europie porównywany do Byrona i Goethego. 
+            W okresie pobytu w Paryżu był wykładowcą literatury słowiańskiej w Collège de France. 
+            Znany przede wszystkim jako autor ballad, powieści poetyckich, 
+            dramatu Dziady oraz epopei narodowej Pan Tadeusz uznawanej za ostatni wielki epos kultury szlacheckiej w Rzeczypospolitej 
+            Obojga Narodów. Narodowy poeta Polski, Litwy i Białorusi. Działacz niepodległościowy, 
+            organizator polskich oddziałów do walki z Rosją, bonapartysta.
+        </p>
+        <p>
+            Adam Mickiewicz urodził się 24 grudnia 1798. Został ochrzczony 12 lutego 1799 w kościele Przemienienia Pańskiego 
+            w Nowogródku. Był synem Mikołaja Mickiewicza herbu Poraj, adwokata sądowego w Nowogródku i komornika mińskiego, 
+            oraz Barbary z Majewskich, córki ekonoma z pobliskiego Czombrowa. 
+            Jego braćmi byli Aleksander i Franciszek Bronisław Mickiewiczowie.
+        </p>
+        <p>
+            W 1815 Mickiewicz wyjechał do Wilna w celu podjęcia studiów. 
+            Studiował nauki humanistyczne na Cesarskim Uniwersytecie Wileńskim – czołowej uczelni dla ziem Rzeczypospolitej 
+            przejętych przez Imperium Rosyjskie. Studia podjął na Wydziale Nauk Fizycznych i Matematycznych, 
+            uczęszczając jednocześnie na wykłady Wydziału Nauk Moralnych i Politycznych oraz Literatury i Sztuk Wyzwolonych. 
+            Trudna sytuacja materialna rodziny po śmierci ojca skłoniła go do podjęcia nauki w uniwersyteckim Seminarium Nauczycielskim, 
+            co gwarantowało później zatrudnienie w szkołach carskich. Studia ukończył w 1819 ze stopniem magistra.
+        </p>
+        <p>
+            W 1819 Mickiewicz rozpoczął pracę jako nauczyciel w gimnazjum w Kownie, gdzie mieszkał do 1823, 
+            początkowo w domu dyrektora szkoły Stanisława Kostki Dobrowolskiego, w folwarku Kartofliszki, 
+            a następnie na kwaterze w budynku szkoły; w gimnazjum uczył literatury, historii i prawa.
+            Napisał wówczas rozprawę, za którą w 1822 otrzymał tytuł magistra filozofii.
+        </p>
+        <p>
+            W latach 1824–1827 przebywał w Petersburgu, Odessie, Moskwie oraz na Krymie. 
+            Następnie Mickiewicz podróżował po Europie – początkowo w 1829 roku udał się do Niemiec, 
+            potem do Włoch i Szwajcarii. W 1831 przyjechał do Wielkopolski z zamiarem przekroczenia granicy i udania się 
+            do ogarniętego powstaniem Królestwa Polskiego, lecz ostatecznie pozostał w Dreźnie do roku 1832.
+        </p>
+        <p>
+            Z Drezna udał się do Paryża, gdzie osiadł na stałe i spędził ponad 20 lat. 
+            Był członkiem Towarzystwa Litewskiego i Ziem Ruskich w Paryżu w 1832. 
+            W 1834 ożenił się z Celiną Szymanowską, z którą miał sześcioro dzieci. 
+        </p>
+        <p>
+            We wrześniu 1855 – podczas wojny krymskiej, po śmierci żony i zostawieniu nieletnich dzieci – wyjechał do Stambułu, 
+            aby tworzyć oddziały polskie (Legion Polski), a także złożony z Żydów, pod nazwą Legion Żydowski, do walki z carską Rosją. 
+            Zamieszkiwał w domu wdowy po kapitanie wojsk tureckich, gdzie zmarł. Nagły zgon nastąpił podczas epidemii cholery.  
+            Powodem „potępieńczych swarów” nad trumną poety stało się jego miejsce spoczynku – tymczasowe, ponieważ zakładano, 
+            że ostatecznie jego ciało spocznie w ojczyźnie. Proponowano stambulski kościół św. Benedykta 
+            lub grób w tworzonej właśnie osadzie polskiej, nazwanej później Adampolem, 
+            książę Czartoryski przesądził jednak o pochówku we Francji. Zabalsamowane zwłoki umieszczono w trzech trumnach: 
+            cynkowej i dwóch drewnianych. Zanim jednak wyprawiono je w drogę do Francji, minął ponad miesiąc. 
+            Dnia 30 grudnia 1855 ciało Mickiewicza wyruszyło z Konstantynopola na pokładzie francuskiego parowca Eufrat. 
+            Do Marsylii przybyło 7 stycznia 1856 Następnie zostało przewiezione do Paryża i pochowane na cmentarzu 
+            Les Champeaux w Montmorency, 4 lipca 1890 przeniesione na Wawel, co dało sposobność do manifestacji patriotycznej.
+        </p>
+    </div>
+</body>
+<footer>
+    <p>Autor: Jakub Dziuba</p>
+    <p>Instytucja: Uniwersytet Marii Curie-Skłodowskiej wydział Nauk o Ziemi i Gospodarki Przestrzennej</p>
+    <p>email: waldes234@gmail.com</p>
+</footer>
+<script src="skrypt.js"></script>
+</html>

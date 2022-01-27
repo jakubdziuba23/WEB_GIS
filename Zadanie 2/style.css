@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(2, 44, 9);
+  }
+  #mapDiv {
+    height: 700px;
+    width: 100%;
+  }

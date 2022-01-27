@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(231, 215, 160);
+  }
+  #naglowek {
+    height: 10%;
+    width: 100%;
+  }
+  #tlo {
+    height: 90%;
+    width: 100%;
+  }
+
+  footer {
+    background-color: #bfc08f;
+  }
+
+  h1 {
+    color: black;
+    text-align: center;
+    font-family: "Lucida Handwriting", cursive;
+  }
+  p {
+    color: black;
+    font-weight: bold;
+  }
+  ul {
+    list-style-type: none;
+    margin: 50;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+    margin-left: 11px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  li button {
+    display: block;
+    padding: 15px;
+    background-color: #bfc08f;
+  }
+
+  #mapDiv {
+    height: 575px;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #858b67
+  }
